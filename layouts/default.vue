@@ -9,7 +9,7 @@
     <v-app-bar color="transparent" flat app>
       <v-row>
         <v-col cols="12" sm="7">
-          <v-text-field filled rounded outlined dense prepend-inner-icon="mdi-magnify" class="mt-7"></v-text-field>
+          <v-text-field color="purple" filled rounded outlined dense prepend-inner-icon="mdi-magnify" class="mt-7"></v-text-field>
         </v-col>
       </v-row>
       <v-spacer></v-spacer>
@@ -28,10 +28,10 @@
           mdi-bell-outline
         </v-icon>
       </v-btn>
-      <v-badge overlap bottom color="green">
-        <v-avatar size="50">
-        <v-img :src="require('../assets/help/eu.png')"></v-img>
-      </v-avatar>
+      <v-badge dot overlap bottom color="green">
+        <v-avatar size="40">
+          <v-img :src="require('../assets/help/eu.png')"></v-img>
+        </v-avatar>
       </v-badge>
     </v-app-bar>
     <v-main>
