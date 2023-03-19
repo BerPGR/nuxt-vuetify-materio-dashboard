@@ -1,6 +1,8 @@
 <template>
   <v-app style="background-color: #F8F8F8;" dark>
     <v-navigation-drawer
+    color="transparent"
+      
       true
       fixed
       app
@@ -23,7 +25,7 @@
           mdi-weather-night
         </v-icon>
       </v-btn>
-      <v-btn icon>
+      <v-btn icon class="mr-2">
         <v-icon>
           mdi-bell-outline
         </v-icon>
