@@ -38,10 +38,23 @@
                   <v-spacer></v-spacer>
                 </v-col>
                 <v-btn icon class="mb-10 ml-4">
-                    <v-icon>
-                      mdi-dots-vertical
-                    </v-icon>
-                  </v-btn>
+                  <v-icon>
+                    mdi-dots-vertical
+                  </v-icon>
+                </v-btn>
+                <v-col cols="12" class="pb-3">
+                  <div class="d-flex flex-row">
+                    <v-sheet rounded elevation="0" width="50" height="50" color="deep-purple lighten-1" class="ml-4 d-flex justify-center">
+                      <v-icon large>
+                        mdi-arrow-top-right
+                      </v-icon>
+                    </v-sheet>
+                    <div class="d-flex flex-column ml-3">
+                      <p class="mb-0 body-2 grey--text">Sales</p>
+                      <h2 class="">245k</h2>
+                    </div>
+                  </div>
+                </v-col>
               </v-row>
 
               
