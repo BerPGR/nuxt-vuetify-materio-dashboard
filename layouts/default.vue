@@ -1,8 +1,7 @@
 <template>
-  <v-app style="background-color: #F8F8F8;" dark>
+  <v-app dark>
     <v-navigation-drawer
     color="transparent"
-      
       true
       fixed
       app
@@ -20,7 +19,7 @@
           mdi-github
         </v-icon>
       </v-btn>
-      <v-btn icon>
+      <v-btn icon @click="$vuetify.theme.dark = !$vuetify.theme.dark">
         <v-icon>
           mdi-weather-night
         </v-icon>

@@ -11,7 +11,7 @@
                   <v-card-title class="pb-3 pt-0 pl-4">
                     Congratulations, Bernardo!
                   </v-card-title>
-                  <v-card-subtitle class="pt-1">
+                  <v-card-subtitle class="pt-1 grey--text">
                     You have won a trophy!
                   </v-card-subtitle>
 
@@ -29,11 +29,24 @@
             </v-card>
 
           </v-col>
-          <v-col cols="12" sm="8"><v-card>
-            <p>
-              Card 2
-            </p>
-          </v-card></v-col>
+          <v-col cols="12" sm="8">
+            <v-card>
+              <v-row align="center">
+                <v-col cols="12" sm="11">
+                  <v-card-title class="pb-3 pt-0">Statistics Card</v-card-title>
+                  <v-card-subtitle><strong>Total 48.5% Growth</strong> 😎 this month</v-card-subtitle>
+                  <v-spacer></v-spacer>
+                </v-col>
+                <v-btn icon class="mb-10 ml-4">
+                    <v-icon>
+                      mdi-dots-vertical
+                    </v-icon>
+                  </v-btn>
+              </v-row>
+
+              
+            </v-card>
+          </v-col>
         </v-row>
       </v-col>
     </v-row>
