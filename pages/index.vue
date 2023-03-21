@@ -51,15 +51,38 @@
                     </v-sheet>
                     <div class="d-flex flex-column ml-3">
                       <p class="mb-0 body-2 grey--text">{{ item.title }}</p>
-                      <h2 class="">{{ item.subtitle }}</h2>
+                      <h2>{{ item.subtitle }}</h2>
                     </div>
                   </div>
                 </v-col>
               </v-row>
-
-              
             </v-card>
           </v-col>
+
+          <v-col cols="12" sm="4">
+            <v-card>
+                <v-card-title class="font-weight-regular">Weekly Overview</v-card-title>
+              <v-card-text>
+                <v-sparkline class="mt-4" line-width="5" height="120" smooth="10" :value="sparkline" color="#4d0f99" type="bar" auto-draw>
+                  <template v-slot:label="item">${{ item.value }}</template>
+                </v-sparkline>
+                <v-row align="center" class=" mt-7 d-flex align-center">
+                  <p class="text-h5 mr-4 ml-4 font-weight-bold">45%</p>
+                  <p class="ml-2">Your sales performance in 45% 😛<br /> better compare to last month</p>
+                </v-row>
+                <v-btn outlined color="deep-purple" width="100%" class="mt-5">details</v-btn>
+              </v-card-text>
+
+            </v-card>
+          </v-col>
+          <v-col cols="12" sm="4">
+            <v-card>
+              <v-card-title>
+                Total Earning
+              </v-card-title>
+            </v-card>
+          </v-col>
+
         </v-row>
       </v-col>
     </v-row>
@@ -75,6 +98,15 @@ export default {
       {color: 'light-green accent-3', icon: 'mdi-account-outline', title: 'Customers', subtitle: '12.5k'},
       {color: 'amber lighten-1', icon: 'mdi-tag-outline', title: 'Product', subtitle: '1.54k'},
       {color: 'cyan accent-2', icon: 'mdi-currency-usd', title: 'Revenue', subtitle: '$88k'},
+    ],
+    sparkline: [
+      42,
+      59,
+      51,
+      60,
+      74,
+      33,
+      57
     ]
   }),
 }
