@@ -165,20 +165,68 @@
               </v-app-bar>
             </v-card>
           </v-col>
+
           <v-col cols="12" sm="2">
-            <v-card>
-              <v-card-title>1</v-card-title>
+            <v-card class="text-center mx-auto">
+              <v-card-title>$86.4k</v-card-title>
+              <v-card-text>
+                <v-sparkline class="mt-4" line-width="5" height="120" smooth="10" :value="profit" type="bar" auto-draw></v-sparkline>
+              </v-card-text>
+              <v-card-text class="pt-0 pb-3 font-weight-bold">Total Profit</v-card-text>
             </v-card>
-            <v-card>
-              <v-card-title>2</v-card-title>
+            <v-card class="mt-4">
+              <v-row class="ma-0" align="center">
+                <v-card-title>
+                  <v-avatar size="30" color="deep-purple">
+                    <v-icon>mdi-menu-right</v-icon>
+                  </v-avatar>
+                </v-card-title>                
+                <v-spacer></v-spacer>
+                <v-btn icon>
+                  <v-icon>
+                    mdi-dots-vertical
+                  </v-icon>
+                </v-btn>
+              </v-row>
+              <v-card-text class="pb-0">New Project</v-card-text>
+              <v-row class="ma-0" align="center">
+                <v-card-title class="pb-0 pt-1 pr-3 pl-4 text-h5 font-weight-bold">862</v-card-title>
+                <p class="red--text mb-0 pt-1 text-caption">-18%</p>
+              </v-row>
+
+              <v-card-text class="pb-5">Yearly Project</v-card-text>
             </v-card>
           </v-col>
           <v-col cols="12" sm="2">
             <v-card>
-              <v-card-title>3</v-card-title>
+              <v-row class="ma-0" align="center">
+                <v-card-title>
+                  <v-avatar size="30" color="grey">
+                    <v-icon small>mdi-poll</v-icon>
+                  </v-avatar>
+                </v-card-title>
+                <v-spacer></v-spacer>
+                <v-btn icon>
+                  <v-icon>
+                    mdi-dots-vertical
+                  </v-icon>
+                </v-btn>
+              </v-row>
+              <v-card-text class="pb-0">Total Profit</v-card-text>
+              <v-row class="ma-0" align="center">
+                <v-card-title class="py-0 pr-2 pl-3 text-h5 font-weight-bold">$25.6k</v-card-title>
+                <p class="green--text mb-0 text-caption">+42%</p>
+              </v-row>
+
+              <v-card-text class="pb-5">Weekly Project</v-card-text>
             </v-card>
-            <v-card>
-              <v-card-title>4</v-card-title>
+
+            <v-card class="mt-4 text-center mx-auo">
+              <v-card-title>2,856</v-card-title>
+              <v-card-text class="pb-0">
+                <v-sparkline class="mt-4" line-width="5" height="120" smooth="10" :value="aux" color="#4d0f99" type="bar" auto-draw></v-sparkline>
+                <v-card-text class="font-weight-bold pt-4">Sessions</v-card-text>
+              </v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -205,6 +253,12 @@ export default {
       74,
       33,
       57
+    ],
+    profit: [
+      0, 10, 2, 18, 12, 30
+    ],
+    aux: [
+      15, 24, 13, 27, 30
     ]
   }),
 }
