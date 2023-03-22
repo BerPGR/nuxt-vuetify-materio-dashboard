@@ -165,7 +165,22 @@
               </v-app-bar>
             </v-card>
           </v-col>
-
+          <v-col cols="12" sm="2">
+            <v-card>
+              <v-card-title>1</v-card-title>
+            </v-card>
+            <v-card>
+              <v-card-title>2</v-card-title>
+            </v-card>
+          </v-col>
+          <v-col cols="12" sm="2">
+            <v-card>
+              <v-card-title>3</v-card-title>
+            </v-card>
+            <v-card>
+              <v-card-title>4</v-card-title>
+            </v-card>
+          </v-col>
         </v-row>
       </v-col>
     </v-row>
