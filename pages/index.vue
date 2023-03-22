@@ -61,7 +61,15 @@
 
           <v-col cols="12" sm="4">
             <v-card>
+              <v-row align="center" class="ma-0">
                 <v-card-title class="font-weight-regular">Weekly Overview</v-card-title>
+                <v-spacer></v-spacer>
+                <v-btn icon>
+                  <v-icon>
+                    mdi-dots-vertical
+                  </v-icon>
+                </v-btn>
+              </v-row>
               <v-card-text>
                 <v-sparkline class="mt-4" line-width="5" height="120" smooth="10" :value="sparkline" color="#4d0f99" type="bar" auto-draw>
                   <template v-slot:label="item">${{ item.value }}</template>
@@ -77,9 +85,24 @@
           </v-col>
           <v-col cols="12" sm="4">
             <v-card>
-              <v-card-title>
-                Total Earning
-              </v-card-title>
+              <v-row align="center" class="ma-0">
+                <v-card-title class="font-weight-regular">
+                  Total Earning
+                </v-card-title>
+                <v-spacer></v-spacer>
+                <v-btn icon>
+                  <v-icon>
+                    mdi-dots-vertical
+                  </v-icon>
+                </v-btn>
+              </v-row>
+              <v-row class="ma-0" align="center">
+                <v-card-title class="text-h4">$24,895</v-card-title>
+                <v-icon class="mt-2" color="green" small>
+                  mdi-triangle
+                </v-icon>
+                <p class="green--text mt-6 ml-1">10%</p>
+              </v-row>
             </v-card>
           </v-col>
 
