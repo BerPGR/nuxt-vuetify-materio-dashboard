@@ -96,13 +96,73 @@
                   </v-icon>
                 </v-btn>
               </v-row>
-              <v-row class="ma-0" align="center">
+              <v-row style="height: 60px" class="ma-0" align="center">
                 <v-card-title class="text-h4">$24,895</v-card-title>
                 <v-icon class="mt-2" color="green" small>
                   mdi-triangle
                 </v-icon>
                 <p class="green--text mt-6 ml-1">10%</p>
               </v-row>
+              <p class="ml-4 mb-0 pb-4 grey--text">Compared to $84,325 last year</p>
+
+
+              <v-app-bar dark flat color="transparent" class="mt-5">
+                <v-row align="center" class="ma-0 d-flex">
+                <v-avatar size="30">
+                  <v-img :src="require('../assets/help/zipcar.png')" contain></v-img>
+                </v-avatar>
+                <div class="d-flex flex-column ml-4">
+                  <v-card-text class="pa-0 pb-1">Zipcar</v-card-text>
+                  <v-card-text class="pa-0 pb-1 text-caption grey--text">VueJS, React & HTML</v-card-text>
+                </div>
+                <v-spacer></v-spacer>
+                <div class="d-flex flex-column align-center">
+                  <v-card-text class="pa-0 pb-1 text-subtitle-1">$24,895.65</v-card-text>
+                  <v-progress-linear rounded value="80" color="purple">
+                  </v-progress-linear>
+                </div>
+                </v-row>
+              </v-app-bar>
+
+
+              <v-app-bar dark flat color="transparent" class="mt-3">
+                <v-row align="center" class="ma-0 d-flex">
+                <v-avatar size="30">
+                  <v-img :src="require('../assets/help/bitbank.png')" contain></v-img>
+                </v-avatar>
+
+                <div class="d-flex flex-column ml-4">
+                  <v-card-text class="pa-0 pb-1">Bitbank</v-card-text>
+                  <v-card-text class="pa-0 pb-1 text-caption grey--text">Sketch, Figma & XD</v-card-text>
+                </div>
+                <v-spacer></v-spacer>
+                <div class="d-flex flex-column align-center">
+                  <v-card-text class="pa-0 pb-1 text-subtitle-1">$86,500.20</v-card-text>
+                  <v-progress-linear rounded value="60" color="cyan">
+                  </v-progress-linear>
+                </div>
+                </v-row>
+              </v-app-bar>
+
+
+              <v-app-bar dark flat color="transparent" class="mt-3">
+                <v-row align="center" class="ma-0 d-flex">
+                <v-avatar size="30">
+                  <v-img :src="require('../assets/help/aviato.png')" contain></v-img>
+                </v-avatar>
+
+                <div class="d-flex flex-column ml-4">
+                  <v-card-text class="pa-0 pb-1">Aviato</v-card-text>
+                  <v-card-text class="pa-0 pb-1 text-caption grey--text">HTML & Angular</v-card-text>
+                </div>
+                <v-spacer></v-spacer>
+                <div class="d-flex flex-column align-center">
+                  <v-card-text class="pa-0 pb-1 text-subtitle-1">$12,450.85</v-card-text>
+                  <v-progress-linear rounded value="30" color="grey">
+                  </v-progress-linear>
+                </div>
+                </v-row>
+              </v-app-bar>
             </v-card>
           </v-col>
 
