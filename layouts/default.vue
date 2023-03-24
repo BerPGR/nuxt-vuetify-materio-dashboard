@@ -16,6 +16,29 @@
         </v-icon>
       </v-toolbar>
 
+      <v-expansion-panels flat class="transparent">
+      <v-expansion-panel>
+        <v-expansion-panel-header class="pl-0">
+          <v-icon class="mr-4">mdi-home</v-icon>
+          <p class="mb-0 mr-6">Dashboards</p>
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <v-list>
+            <v-list-item-group>
+              <v-list-item v-for="(item, i) in dashboards" :key="i">
+                <v-list-item-icon>
+                  <v-icon small>mdi-circle-outline</v-icon>
+                </v-list-item-icon>
+                <v-list-item-content>
+                  <v-list-item-title>{{ item.title }}</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list-item-group>
+          </v-list>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels>
+
       <v-list nav dense>
         <v-list-item-group>
           <v-list-item v-for="(item, i) in apps" :key="i" link>
@@ -82,6 +105,12 @@ export default {
         { icon: 'mdi-receipt', title: "Invoice" },
         { icon: 'mdi-account', title: "User" },
         { icon: 'mdi-file', title: "Pages" },
+      ],
+
+      dashboards: [
+        { title: "CRM"},
+        { title: "Analytics"},
+        { title: "eCommerce"},
       ]
     }
   },
@@ -94,7 +123,8 @@ export default {
 background: linear-gradient(257deg, rgba(77,8,156,1) 0%, rgba(176,109,177,1) 100%);
 }
 
-.v-list--nav .v-list-item, .v-list--nav .v-list-item:before {
+.v-list--nav .v-list-item, .v-list--nav .v-list-item:before, 
+.v-list-item-group .v-list-item--active {
   border-radius: 5px 40px 40px 5px;
   background-color: transparent;
 }
